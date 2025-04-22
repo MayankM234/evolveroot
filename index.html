@@ -1,9 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EvolveRoot - Grow Beyond Limits</title>
   <style>
     body {
@@ -15,18 +13,44 @@
     header {
       background-color: #2e7d32;
       color: white;
-      padding: 2rem;
-      text-align: center;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav {
-      text-align: center;
-      margin-top: 1rem;
+    .menu {
+      position: relative;
+      display: inline-block;
     }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
+    .menu-button {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .menu-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      left: 0;
+    }
+    .menu-content a {
       color: #2e7d32;
-      font-weight: bold;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .menu-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .menu:hover .menu-content {
+      display: block;
     }
     .hero {
       text-align: center;
@@ -46,9 +70,6 @@
       max-width: 900px;
       margin: auto;
     }
-    .section h2 {
-      color: #2e7d32;
-    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -59,45 +80,20 @@
 </head>
 <body>
   <header>
-    <h1>EvolveRoot</h1>
-    <p>Grow Beyond Limits</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="hero">
-    <h1>Unlock Real-Life Skills</h1>
+    <div><h1>EvolveRoot</h1></div>
+    <div class="menu">
+      <button class="menu-button">Menu</button>
+      <div class="menu-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>  <div class="hero">
+    <h1>Welcome to EvolveRoot</h1>
     <p>Empowering the next generation with practical knowledge for career, mindset, and personal growth.</p>
-  </div>
-
-  <section id="about" class="section">
-    <h2>About EvolveRoot</h2>
-    <p>
-      EvolveRoot is an online learning platform built to equip students, professionals, and lifelong learners with practical, real-world skills that traditional education often overlooks. From communication to finance, mindset to productivity, we’re here to help you evolve at the root level.
-    </p>
-  </section>
-
-  <section id="courses" class="section">
-    <h2>Popular Course Categories</h2>
-    <ul>
-      <li>Personal Finance & Money Management</li>
-      <li>Effective Communication & Public Speaking</li>
-      <li>Career Skills & Job Readiness</li>
-      <li>Mental Health & Mindset Mastery</li>
-      <li>Productivity & Time Management</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to get involved? Reach out at <strong>contact@evolveroot.com</strong></p>
-  </section>
-
-  <footer>
+  </div>  <footer>
     <p>&copy; 2025 EvolveRoot. All rights reserved.</p>
   </footer>
 </body>
